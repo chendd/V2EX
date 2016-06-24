@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">V2EX</string>
+
+    <string name="navigation_latest_topics">最新主题</string>
+    <string name="navigation_hot_topics">最热主题</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+</resources>
