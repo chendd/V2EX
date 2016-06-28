@@ -4,6 +4,9 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+import com.chendd.v2ex.utils.AppContextUtil;
+import com.facebook.drawee.backends.pipeline.Fresco;
+
 import butterknife.ButterKnife;
 
 /**
@@ -14,6 +17,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fresco.initialize(AppContextUtil.getInstance());
         setContentView(getLayoutId());
         ButterKnife.bind(this);
         afterCreate(savedInstanceState);
